@@ -1,0 +1,141 @@
+/* Global Styles */
+
+/* Root Background and Padding */
+.root {
+    -fx-background: linear-gradient(to bottom, #6a1b9a, #00897b); /* Deep purple to teal gradient */
+    -fx-padding: 10px;
+    -fx-transition: background 0.5s ease-in-out;
+}
+
+/* Window Title */
+.window-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f9f9f9; /* Light text color for contrast */
+}
+
+/* Pane or Main Container Styling */
+.pane {
+    -fx-padding: 20px;
+    -fx-background-color: rgba(255, 255, 255, 0.85); /* Soft white, semi-transparent */
+    -fx-border-color: #ffb300; /* Gold border for a pop of color */
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-effect: dropshadow(gaussian, #444, 8, 0, 0, 6); /* Soft shadow effect */
+}
+
+/* Hover effect on the entire window */
+.root:hover {
+    -fx-background: linear-gradient(to bottom, #9c27b0, #00796b); /* Darker gradient on hover */
+    -fx-transition: background 0.5s ease-in-out;
+}
+
+
+/* Button Styles */
+.button {
+    -fx-background-color: #ffb300; /* Warm gold color for buttons */
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 24px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-effect: dropshadow(gaussian, #444, 5, 0, 0, 5); /* Shadow effect for buttons */
+}
+
+.button:hover {
+    -fx-background-color: #ff9800; /* Lighter gold on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #f57c00; /* Darker gold on press */
+}
+
+
+/* Label Styles */
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f9f9f9; /* White for better visibility */
+    -fx-padding: 5px 10px;
+}
+
+.label.success {
+    -fx-text-fill: #4CAF50; /* Green for success messages */
+}
+
+.label.error {
+    -fx-text-fill: #FF0000; /* Red for error messages */
+}
+
+
+/* Text Area Styling */
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #00897b; /* Teal-colored border */
+    -fx-border-radius: 8px;
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-effect: dropshadow(gaussian, #444, 5, 0, 0, 6); /* Shadow effect for text area */
+}
+
+/* Text Field Styling */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #00897b; /* Teal border for consistency */
+    -fx-border-radius: 6px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.text-field:focused {
+    -fx-border-color: #ffb300; /* Gold border on focus */
+}
+
+
+/* ListView Styles */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #00897b; /* Teal border */
+    -fx-border-radius: 6px;
+    -fx-padding: 10px;
+}
+
+.list-view .list-cell {
+    -fx-padding: 10px;
+    -fx-background-color: #f1f1f1; /* Soft background for list items */
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #e0f7fa; /* Light teal on hover */
+}
+
+.list-view .list-cell:focused {
+    -fx-background-color: #00897b; /* Teal when focused */
+    -fx-text-fill: white;
+}
+
+
+/* Scroll Pane Styles */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+
+/* Menu Bar and Menu Item Styling */
+.menu-bar {
+    -fx-background-color: #333;
+    -fx-border-color: #444;
+    -fx-border-width: 1px;
+}
+
+.menu-item {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.menu-item:hover {
+    -fx-background-color: #555;
+}
